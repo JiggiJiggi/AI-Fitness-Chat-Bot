@@ -1,0 +1,217 @@
+{
+  "intents": [
+    {
+      "tag": "general_intent",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "How are you?",
+        "What's up?",
+        "Hey there",
+        "Good morning",
+        "Good afternoon",
+        "Good evening"
+      ],
+      "responses": ["Hello! How can I assist you with your fitness goals today?"]
+    },
+    {
+      "tag": "good_bye_intent",
+      "patterns": [
+        "bye","see you soon","good bye","thanks for everything","bye bye","thank you","thank you so much","take care"
+      ],
+      "responses": ["Have a good day"]
+    },
+    {
+      "tag": "workout_plan",
+      "patterns": [
+        "Can you create a workout plan for me?",
+        "I need a workout plan",
+        "Suggest a workout routine",
+        "What should I do to lose weight?",
+        "How can I build muscle?",
+        "Recommend exercises for me",
+        "Best workouts for beginners",
+        "Can you help me with a fitness routine?"
+      ],
+      "responses": ["Sure! Please let me know your fitness goals, and I'll suggest a plan."]
+    },
+    {
+      "tag": "nutrition_plan",
+      "patterns": [
+        "Suggest a diet plan",
+        "Can you create a meal plan?",
+        "What should I eat to stay healthy?",
+        "Recommend a healthy diet",
+        "What foods should I avoid?",
+        "How many calories should I eat?",
+        "Nutrition tips for weight loss",
+        "What is the best diet for muscle gain?"
+      ],
+      "responses": ["I can suggest a meal plan based on your goals. Are you aiming for weight loss, muscle gain, or general health?"]
+    },
+    {
+      "tag": "exercise_tips",
+      "patterns": [
+        "How do I perform squats correctly?",
+        "What's the best way to do push-ups?",
+        "How can I improve my form?",
+        "Give me tips for stretching",
+        "What's the proper technique for deadlifts?",
+        "How should I warm up?",
+        "What are the best recovery exercises?",
+        "How can I avoid injuries while working out?"
+      ],
+      "responses": ["Form and technique are crucial! Let me guide you step by step."]
+    },
+    {
+      "tag": "fitness_goals",
+      "patterns": [
+        "How do I lose weight?",
+        "How can I gain muscle?",
+        "I want to run a marathon",
+        "I need to improve my endurance",
+        "How do I get six-pack abs?",
+        "I want to tone my body",
+        "How do I stay consistent?",
+        "What should I focus on for strength training?"
+      ],
+      "responses": ["Setting clear goals is the first step! Let's break them down together."]
+    },
+    {
+      "tag": "equipment",
+      "patterns": [
+        "Do I need equipment for this workout?",
+        "What equipment is best for home workouts?",
+        "Should I buy dumbbells?",
+        "What's the best gym equipment for weight loss?",
+        "Can I work out without equipment?",
+        "Recommend some home gym equipment"
+      ],
+      "responses": ["Equipment can enhance your workout, but many exercises are effective without it."]
+    },
+    {
+      "tag": "schedule",
+      "patterns": [
+        "How often should I work out?",
+        "What’s the best time to exercise?",
+        "How long should my workouts be?",
+        "How many rest days should I take?",
+        "Can you help me create a weekly workout schedule?",
+        "How should I divide my workouts?"
+      ],
+      "responses": ["A consistent schedule is key! Let's customize one for you."]
+    },
+    {
+      "tag": "progress_tracking",
+      "patterns": [
+        "How do I track my fitness progress?",
+        "What apps should I use to track workouts?",
+        "How can I measure my weight loss?",
+        "What are the best tools for tracking fitness?",
+        "How do I know if I’m improving?",
+        "Can you help me track my performance?"
+      ],
+      "responses": ["Tracking progress is essential. I'll help you monitor your achievements effectively."]
+    },
+    {
+      "tag": "mental_health",
+      "patterns": [
+        "How does fitness help mental health?",
+        "Can exercise reduce stress?",
+        "What workouts are best for mental well-being?",
+        "How do I stay motivated?",
+        "What should I do if I feel too tired to work out?",
+        "How can I build discipline?"
+      ],
+      "responses": ["Exercise is great for mental health! Let’s explore how it can benefit you."]
+    },
+    {
+      "tag": "hydration",
+      "patterns": [
+        "How much water should I drink?",
+        "Is hydration important for workouts?",
+        "When should I drink water during exercise?",
+        "What are the best hydration tips?",
+        "Do I need sports drinks?"
+      ],
+      "responses": ["Staying hydrated is crucial! Aim for consistent water intake throughout the day."]
+    },
+    {
+      "tag": "injury_prevention",
+      "patterns": [
+        "How do I prevent injuries?",
+        "What should I do if I feel pain during exercise?",
+        "How do I recover from an injury?",
+        "Can you recommend low-impact exercises?",
+        "What’s the best way to avoid overtraining?"
+      ],
+      "responses": ["Injury prevention is key. Let’s focus on proper technique and recovery."]
+    },
+
+      {
+          "tag": "gym_recommendation",
+          "patterns": [
+              "Can you recommend a gym plan for me?",
+              "What workout should I do?",
+              "Suggest a fitness plan based on my BMI",
+              "What exercises are best for my age and weight?",
+              "I need gym advice",
+              "Help me with a workout recommendation",
+              "Suggest a plan for weight loss",
+              "Recommend exercises for muscle gain"
+          ],
+          "responses": [
+              "Sure! Please provide your age, weight, and height to get a personalized gym recommendation.",
+              "I'd be happy to help! Share your age, weight, and height so I can suggest a plan tailored to you.",
+              "To recommend a gym plan, I’ll need your age, weight, and height. Could you provide those details?"
+          ]
+      },
+      {
+          "tag": "provide_gym_plan",
+          "patterns": [
+              "I am 25 years old, my weight is 70 kg, and my height is 175 cm.",
+              "Age: 18, Weight: 60 kg, Height: 160 cm.",
+              "I'm 30 years old, weigh 85 kg, and my height is 180 cm.",
+              "My height is 165 cm, weight is 50 kg, and I am 20 years old.",
+              "I’m 40, weigh 90 kg, and my height is 170 cm.",
+              "Age 25, Weight 68 kg, Height 175 cm",
+              "Here's my info: age 22, weight 55 kg, height 160 cm."
+          ],
+          "responses": [
+              "Based on your BMI and age, here's your gym recommendation: {gym_plan}.",
+              "Here’s a tailored gym plan for you: {gym_plan}.",
+              "Based on your details, I recommend the following: {gym_plan}.",
+              "Your personalized gym plan: {gym_plan}."
+          ],
+          "context": [
+              "age",
+              "weight",
+              "height"
+          ]
+      },
+      {
+      "tag": "bmi_age_based_recommendation",
+      "patterns": [
+        "I am underweight and 20 years old",
+        "I am normal weight and 21 years old",
+        "I am overweight and 22,23 years old",
+        "I am obese and 24 years old",
+        "What should I do if my BMI is underweight?",
+        "What exercises should I do for normal weight?",
+        "I am 18 and my BMI is overweight",
+        "I am 26 years old and obese, what should I do?",
+        "Recommend exercises based on my BMI and age"
+      ],
+      "responses": [
+        "Since your BMI indicates focus on light exercises like yoga and calisthenics. Avoid heavy lifting and include protein-rich foods in your diet.",
+        "With a BMI indicating underweight and an age between 18-40, prioritize strength training with moderate intensity and include high-calorie, nutrient-rich meals.",
+        "If your BMI is normal and you are between 18-40, maintain a balanced workout routine with a mix of cardio, strength training, and flexibility exercises.",
+        "If your BMI is normal and you are above 40, focus on low-impact cardio, light strength training, and yoga or Pilates to maintain mobility and flexibility.",
+        "With a BMI indicating overweight and age between 18-40, focus on high-intensity interval training (HIIT), cycling, and strength training to support weight loss.",
+        "For overweight BMI above 40 years, include brisk walking, swimming, and light resistance exercises. Pair it with a calorie-deficit diet.",
+        "If your BMI indicates obesity and you are under 40, start with low-impact cardio like walking or cycling, and gradually incorporate light strength training.",
+        "For obesity BMI above 40 years, focus on mobility exercises, low-intensity swimming, and prioritize a consistent, gradual approach to physical activity."
+      ]
+    }
+  ]
+}
